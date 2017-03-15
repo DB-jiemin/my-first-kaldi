@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst "ark:sym2int.pl --map-oov 4580 -f 2- data/lang/words.txt < audio/train/split3/3/text|" "ark:|gzip -c >exp/mono/fsts.3.gz" 
+# Started at Fri Mar 10 21:49:59 CST 2017
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst 'ark:sym2int.pl --map-oov 4580 -f 2- data/lang/words.txt < audio/train/split3/3/text|' 'ark:|gzip -c >exp/mono/fsts.3.gz' 
+sym2int.pl: replacing SERGIO with 4580
+sym2int.pl: replacing SAINTS with 4580
+sym2int.pl: replacing TAKEOVER with 4580
+sym2int.pl: replacing SADDAM with 4580
+sym2int.pl: replacing REMATCH with 4580
+sym2int.pl: replacing ENCORE with 4580
+sym2int.pl: replacing SADDAM with 4580
+sym2int.pl: replacing DARREN with 4580
+sym2int.pl: replacing FREAKS with 4580
+sym2int.pl: replacing WOUND with 4580
+sym2int.pl: replacing MCMASTER with 4580
+sym2int.pl: replacing MCKEAN with 4580
+sym2int.pl: replacing MANDELA with 4580
+sym2int.pl: replacing WEBSITE with 4580
+sym2int.pl: replacing HIGHLIGHTED with 4580
+sym2int.pl: replacing AIRSPACE with 4580
+sym2int.pl: replacing ARTWORK with 4580
+sym2int.pl: replacing GUIDELINES with 4580
+sym2int.pl: replacing COSTED with 4580
+sym2int.pl: replacing MCCONNELL with 4580
+sym2int.pl: not warning for OOVs any more times
+** Replaced 259 instances of OOVs with 4580
+LOG (compile-train-graphs:main():compile-train-graphs.cc:145) compile-train-graphs: succeeded for 11482 graphs, failed for 0
+# Accounting: time=102 threads=1
+# Ended (code 0) at Fri Mar 10 21:51:41 CST 2017, elapsed time 102 seconds

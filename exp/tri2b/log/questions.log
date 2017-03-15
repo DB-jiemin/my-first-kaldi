@@ -1,0 +1,18 @@
+cluster-phones exp/tri2b/treeacc data/lang/phones/sets.int exp/tri2b/questions.int 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 6 7 8 9 10 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 15 16 17 18 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 51 52 53 54 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 67 68 69 70 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 95 96 97 98 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 119 120 121 122 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 151 152 153 154 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 175 176 177 178 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 191 192 193 194 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 207 208 209 210 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 235 236 237 238 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 255 256 257 258 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 271 272 273 274 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 291 292 293 294 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 315 316 317 318 
+WARNING (cluster-phones:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 331 332 333 334 
+LOG (cluster-phones:main():cluster-phones.cc:129) Wrote questions to exp/tri2b/questions.int

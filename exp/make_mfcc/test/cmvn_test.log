@@ -1,0 +1,3 @@
+compute-cmvn-stats --spk2utt=ark:audio/test/spk2utt scp:audio/test/feats.scp 'ark,scp:/media/zjm/新加卷/my-first-kaldi/mfcc/cmvn_test.ark,/media/zjm/新加卷/my-first-kaldi/mfcc/cmvn_test.scp' 
+WARNING (compute-cmvn-stats:main():compute-cmvn-stats.cc:107) Did not find features for utterance p376_295
+LOG (compute-cmvn-stats:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 8778 utterances; 1 had errors.

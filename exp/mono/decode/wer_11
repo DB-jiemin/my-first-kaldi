@@ -1,0 +1,4 @@
+./kaldi-master/src/bin/compute-wer --text --mode=present ark:exp/mono/decode/scoring/test_filt.txt ark,p:- 
+%WER 24.55 [ 15870 / 64653, 1099 ins, 4453 del, 10318 sub ] [PARTIAL]
+%SER 65.96 [ 5790 / 8778 ]
+Scored 8778 sentences, 1 not present in hyp.

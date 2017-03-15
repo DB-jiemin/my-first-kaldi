@@ -1,0 +1,5 @@
+# cat exp/mono/decode/scoring/9.tra | utils/int2sym.pl -f 2- exp/mono/graph/words.txt | sed s:\<UNK\>::g | ./kaldi-master/src/bin/compute-wer --text --mode=present ark:exp/mono/decode/scoring/test_filt.txt ark,p:- >& exp/mono/decode/wer_9 
+# Started at Sat Mar 11 01:41:13 CST 2017
+#
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Mar 11 01:41:13 CST 2017, elapsed time 0 seconds

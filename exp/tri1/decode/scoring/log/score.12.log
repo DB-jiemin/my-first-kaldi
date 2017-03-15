@@ -1,0 +1,5 @@
+# cat exp/tri1/decode/scoring/12.tra | utils/int2sym.pl -f 2- exp/tri1/graph/words.txt | sed s:\<UNK\>::g | ./kaldi-master/src/bin/compute-wer --text --mode=present ark:exp/tri1/decode/scoring/test_filt.txt ark,p:- >& exp/tri1/decode/wer_12 
+# Started at Sat Mar 11 06:20:07 CST 2017
+#
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sat Mar 11 06:20:08 CST 2017, elapsed time 1 seconds

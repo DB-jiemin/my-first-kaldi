@@ -1,0 +1,146 @@
+# ali-to-post "ark:gunzip -c exp/deltas_ali/ali.2.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/deltas_ali/final.mdl ark:- ark:- | acc-lda --rand-prune=4.0 exp/deltas_ali/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:audio/train/split3/2/utt2spk scp:audio/train/split3/2/cmvn.scp scp:audio/train/split3/2/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- |" ark,s,cs:- exp/tri2b/lda.2.acc 
+# Started at Sat Mar 11 04:00:20 CST 2017
+#
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/deltas_ali/final.mdl ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/deltas_ali/ali.2.gz|' ark:- 
+acc-lda --rand-prune=4.0 exp/deltas_ali/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:audio/train/split3/2/utt2spk scp:audio/train/split3/2/cmvn.scp scp:audio/train/split3/2/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- |' ark,s,cs:- exp/tri2b/lda.2.acc 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:audio/train/split3/2/utt2spk scp:audio/train/split3/2/cmvn.scp scp:audio/train/split3/2/feats.scp ark:- 
+LOG (acc-lda:main():acc-lda.cc:114) Done 100 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 400 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 700 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 800 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 900 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 1000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 1100 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 1200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 1300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 1400 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 1500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 1600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 1700 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 1800 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 1900 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 2000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 2100 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 2200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 2300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 2400 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 2500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 2600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 2700 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 2800 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 2900 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 3000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 3100 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 3200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 3300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 3400 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 3500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 3600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 3700 utterances.
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p275_024
+LOG (acc-lda:main():acc-lda.cc:114) Done 3800 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 3900 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 4000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 4100 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 4200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 4300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 4400 utterances.
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p277_024
+LOG (acc-lda:main():acc-lda.cc:114) Done 4500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 4600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 4700 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 4800 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 4900 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 5000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 5100 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 5200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 5300 utterances.
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p279_227
+LOG (acc-lda:main():acc-lda.cc:114) Done 5400 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 5500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 5600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 5700 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 5800 utterances.
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p282_010
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p282_021
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p282_022
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p282_023
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p282_063
+LOG (acc-lda:main():acc-lda.cc:114) Done 5900 utterances.
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p282_116
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p282_133
+LOG (acc-lda:main():acc-lda.cc:114) Done 6000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 6100 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 6200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 6300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 6400 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 6500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 6600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 6700 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 6800 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 6900 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 7000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 7100 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 7200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 7300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 7400 utterances.
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p286_342
+LOG (acc-lda:main():acc-lda.cc:114) Done 7500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 7600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 7700 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 7800 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 7900 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 8000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 8100 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 8200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 8300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 8400 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 8500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 8600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 8700 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 8800 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 8900 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 9000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 9100 utterances.
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p295_001
+LOG (acc-lda:main():acc-lda.cc:114) Done 9200 utterances.
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p295_047
+LOG (acc-lda:main():acc-lda.cc:114) Done 9300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 9400 utterances.
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p295_334
+LOG (acc-lda:main():acc-lda.cc:114) Done 9500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 9600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 9700 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 9800 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 9900 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 10000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 10100 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 10200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 10300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 10400 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 10500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 10600 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 10700 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 10800 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 10900 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 11000 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 11100 utterances.
+WARNING (acc-lda:main():acc-lda.cc:77) No posteriors for utterance p302_013
+LOG (acc-lda:main():acc-lda.cc:114) Done 11200 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 11300 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 11400 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 11500 utterances.
+LOG (acc-lda:main():acc-lda.cc:114) Done 11600 utterances.
+LOG (ali-to-post:main():ali-to-post.cc:65) Converted 11673 alignments.
+LOG (weight-silence-post:main():weight-silence-post.cc:95) Done 11673 posteriors.
+LOG (apply-cmvn:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 11688 utterances, errors on 0
+LOG (acc-lda:main():acc-lda.cc:117) Done 11673 files, failed for 15
+LOG (acc-lda:main():acc-lda.cc:122) Written statistics.
+# Accounting: time=47 threads=1
+# Ended (code 0) at Sat Mar 11 04:01:07 CST 2017, elapsed time 47 seconds

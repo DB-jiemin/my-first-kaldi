@@ -1,0 +1,35 @@
+# build-tree --verbose=1 --max-leaves=2000 --cluster-thresh=-1 exp/tri1/treeacc data/lang/phones/roots.int exp/tri1/questions.qst data/lang/topo exp/tri1/tree 
+# Started at Sat Mar 11 01:49:08 CST 2017
+#
+build-tree --verbose=1 --max-leaves=2000 --cluster-thresh=-1 exp/tri1/treeacc data/lang/phones/roots.int exp/tri1/questions.qst data/lang/topo exp/tri1/tree 
+LOG (build-tree:main():build-tree.cc:100) Number of separate statistics is 69520
+LOG (build-tree:BuildTree():build-tree.cc:159) BuildTree: before building trees, map has 86 leaves.
+LOG (build-tree:SplitDecisionTree():build-tree-utils.cc:577) DoDecisionTreeSplit: split 1914 times, #leaves now 2000
+LOG (build-tree:BuildTree():build-tree.cc:185) Setting clustering threshold to smallest split 2107.75
+VLOG[1] (build-tree:BuildTree():build-tree.cc:194) After decision tree split, num-leaves = 2000, like-impr = 6.37835 per frame over 1.2427e+07 frames.
+VLOG[1] (build-tree:BuildTree():build-tree.cc:198) Including just phones that were split, improvement is 6.37835 per frame over 1.2427e+07 frames.
+LOG (build-tree:BuildTree():build-tree.cc:213) BuildTree: removed 408 leaves.
+VLOG[1] (build-tree:BuildTree():build-tree.cc:220) Objf change due to clustering -0.0428485 per frame.
+VLOG[1] (build-tree:BuildTree():build-tree.cc:223) Normalizing over only split phones, this is: -0.0428485 per frame.
+VLOG[1] (build-tree:BuildTree():build-tree.cc:226) Num-leaves is now 1592
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 1, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 3, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 12, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 16, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 23, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 29, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 30, low count 4
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 37, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 43, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 47, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 51, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 58, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 63, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 67, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 72, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 78, low count 0
+VLOG[1] (build-tree:main():build-tree.cc:138) For pdf-id 82, low count 0
+WARNING (build-tree:main():build-tree.cc:180) Saw no stats for following phones: 2 3 4 6 7 8 9 10 14 15 16 17 18 19 22 23 26 27 30 34 38 42 44 46 50 51 52 53 54 56 58 62 66 67 68 69 70 72 74 79 82 86 88 90 91 94 95 96 97 98 99 102 107 110 114 118 119 120 121 122 123 124 126 130 131 134 138 142 146 150 151 152 153 154 155 156 158 159 160 162 163 164 166 170 174 175 176 177 178 186 187 190 191 192 193 194 196 198 200 202 204 206 207 208 209 210 212 214 216 218 220 222 226 228 230 234 235 236 237 238 242 244 246 248 250 254 255 256 257 258 262 270 271 272 273 274 278 282 286 288 290 291 292 293 294 296 298 300 302 304 306 310 314 315 316 317 318 322 330 331 332 333 334 336 338 340 342 344 346 
+LOG (build-tree:main():build-tree.cc:184) Wrote tree
+# Accounting: time=33 threads=1
+# Ended (code 0) at Sat Mar 11 01:49:41 CST 2017, elapsed time 33 seconds
